@@ -7,38 +7,63 @@
     <link rel="stylesheet" href="./index.css">
     <title>InnoQuant</title>
 </head>
-<body class="bg-black">
+<body class="">
 
     <header class=" hero bg-cover w-full h-full min-h-96 max-h-800px bg-center p-4" style="background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100% ), url('../img/pexels-energepiccom-110469.jpg'); ">
 
-        <nav class=" h-full flex gap-10 justify-around text-sm md:text-base lg:text-lg xl:text-xl  font-bold">
-
-            <div class=" flex gap-1 ">
+        <button id="menu-toggle" class="block md:hidden absolute top-4 right-4 text-white">
+            <svg class="h-6 w-6  fill-white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path fill-rule="evenodd" d="M2.75 6.75h18.5v-1.5h-18.5v1.5zm0 5h18.5v-1.5h-18.5v1.5zm0 5h18.5v-1.5h-18.5v1.5z"/>
+            </svg>
+        </button>
+          
+        <div class=" md:block hidden">
+            <div class=" flex gap-1 top-6 left-4 fixed ">
                 <h1 class=" text-white md:text-xl  lg:text-2xl ">InnoQuant</h1>
             </div>
 
+            <nav class="h-full flex gap-10 justify-evenly text-sm md:text-base lg:text-lg xl:text-xl font-bold ">
 
-            <ul class=" text-white flex gap-8 ">
-                <li class="">
-                    <a href="" class="">Inicio</a>
-                </li>
-                <li>
-                    <a href="">Sobre Nosotros</a>
-                </li>
-                <li>
-                    <a href="">Servicios</a>
-                </li>
-                <li>
-                    <a href="">Contacto</a>
-                </li>
-                <li>
-                    <a href=""><img src="../img/usuario-_2_.svg" class=" w-8"></a>
-                </li>
-            
-            </ul>
-            
-        </nav>
+    
+                <ul class=" text-white flex gap-8 ">
+                   
 
+                    <li class="">
+                        <a href="" class="">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="">Sobre Nosotros</a>
+                    </li>
+                    <li>
+                        <a href="">Servicios</a>
+                    </li>
+                    <li>
+                        <a href="">Contacto</a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../img/usuario-_2_.svg" class=" w-8 min-w-6"></a>
+                    </li>
+                
+                </ul>
+                
+            </nav>
+
+        </div>
+        
+
+        <div class=" flex flex-col justify-center items-center">
+            <section class="info-hero flex flex-col justify-center w-[85%]">
+                <p class="text-white mb-10 mt-10 text-center text-lg md:text-xl lg:text-2xl xl:text-2xl flex flex-col justify-center items-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, sequi. Praesentium quo dolores accusamus, iusto quisquam consequuntur et at? Reiciendis nesciunt quaerat veritatis non tempore ipsa optio sapiente expedita corporis
+                </p>
+            </section>
+        </div>
+
+        <div class=" flex justify-center">
+            <button href="" class="text-white flex flex-col items-center justify-center  bg-gray-500 sm:w-auto md:w-1/4 lg:w-1/6 text-center  rounded-lg font-bold py-2 px-4 ">
+                <span class="text-center">Comienza ahora</span>
+            <button/>
+        </div>
+        
     </header>
 
 </body>
